@@ -6,6 +6,7 @@ import Layout from "../components/structure/Layout";
 import { Contacts } from "../pages/Contacts";
 import { Gallery } from "../pages/Gallery";
 import { About } from "../pages/About";
+import { Services } from "../pages/Services";
 
 export const RouterPage = () => {
   return (
@@ -16,6 +17,10 @@ export const RouterPage = () => {
         <Route
           path="/galeria"
           element={<Layout children={<Gallery />} />}
+        ></Route>
+        <Route
+          path="/servicos"
+          element={<Layout children={<Services />} />}
         ></Route>
         <Route
           path="/contactos"

@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <>
-      <footer className="text-white bg-black w-full h-64 mt-auto">
+      <footer className="text-whit bg-neutral-800 text-white w-full h-64 mt-auto">
         <p>footer</p>
       </footer>
     </>

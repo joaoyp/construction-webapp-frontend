@@ -2,19 +2,15 @@ import { Typography } from "@mui/material";
 import { Navbar } from "../common/Navbar";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import { Link } from "react-router-dom";
+import Logo from "../../resources/logo.png";
 
 export const Header = () => {
   return (
     <>
       <header className="z-10 flex top-0 sticky w-full h-24 bg-white justify-between">
-        <div className="flex items-center gap-5 ml-8">
+        <div className="flex items-center gap-5 ml-60">
           <Link to="/">
-            <HandymanIcon sx={{ fontSize: 64 }} />
-          </Link>
-          <Link to="/">
-            <Typography fontSize={24}>
-              Pedro & Agostinho - Construções
-            </Typography>
+            <img className="h-auto w-auto" src={Logo} alt="logo" />
           </Link>
         </div>
         <Navbar />
