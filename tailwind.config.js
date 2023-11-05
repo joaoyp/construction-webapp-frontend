@@ -8,7 +8,6 @@ module.exports = {
         hero2: "url('/src/resources/images/5.jpg')",
       },
       fontFamily: {
-        lora: ['"Lora"', "serif"],
         alice: ['"Alice', "serif"],
       },
     },

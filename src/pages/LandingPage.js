@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Container } from "@mui/material";
 import { Typography } from "@mui/material";
+import { Button } from "@mui/material";
+import { PrimaryButton } from "../components/common/PrimaryButton";
 
 export const LandingPage = () => {
   useEffect(() => {
@@ -11,27 +13,52 @@ export const LandingPage = () => {
     <>
       <main>
         <div id="hero" className="relative">
-          <div className="bg-hero bg-cover bg-fixed w-full h-screen"></div>
+          <div className="bg-hero bg-cover bg-fixed w-full real-screen"></div>
           <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-40 bg-black">
             <Container
               maxWidth="sm"
               className="text-center relative text-white flex items-center"
             >
-              <Typography variant="h2" component="h1" gutterBottom>
+              <Typography
+                fontFamily="Alice"
+                variant="h2"
+                component="h1"
+                gutterBottom
+              >
                 Pedro e Agostinho{" "}
                 <span className="text-yellow-500">
                   Construções e Remodelações
                 </span>
               </Typography>
-              <Typography variant="h5" gutterBottom>
-                Peça já o seu orçamento grátis!
-              </Typography>
             </Container>
           </div>
         </div>
-        <div id="white" className="h-80 bg-white"></div>
-        <div id="teal" className="h-80 bg-hero2 bg-cover bg-fixed"></div>
-        <div id="white" className="h-screen bg-white"></div>
+        <div className="h-[70vh] bg-white"></div>
+        <div id="estimate" className="relative">
+          <div className="h-80 bg-hero2 bg-cover bg-fixed"></div>
+          <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-40 bg-black">
+            <div className="flex flex-col items-center w-full">
+              <Typography fontFamily="Alice" variant="h2" component="h1">
+                Qualidade e Eficácia
+              </Typography>
+              <div className="mt-8">
+                <Typography fontFamily="Alice" variant="h4" component="h2">
+                  Peça já o seu orçamento:
+                </Typography>
+              </div>
+              <div className="mt-6">
+                <PrimaryButton
+                  bgcolor="orange"
+                  size="large"
+                  variant="contained"
+                  text="Aqui"
+                  fontFamily="Alice"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="real-screen"></div>
       </main>
     </>
   );

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Lora&display=swap");
 
 body {
@@ -20,4 +19,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.real-screen {
+  height: calc(100vh - 6rem); /* 100vh - the header (h-24 = 6 rem) */
 }
