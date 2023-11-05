@@ -36,19 +36,22 @@ export const LandingPage = () => {
         <div className="h-[70vh] bg-white"></div>
         <div id="estimate" className="relative">
           <div className="h-80 bg-hero2 bg-cover bg-fixed"></div>
-          <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-40 bg-black">
+          <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-70 bg-black">
             <div className="flex flex-col items-center w-full">
               <Typography fontFamily="Alice" variant="h2" component="h1">
                 Qualidade e Eficácia
               </Typography>
               <div className="mt-8">
                 <Typography fontFamily="Alice" variant="h4" component="h2">
-                  Peça já o seu orçamento:
+                  Peça o seu orçamento:
                 </Typography>
               </div>
               <div className="mt-6">
                 <PrimaryButton
                   bgcolor="orange"
+                  color="white"
+                  hoverBgColor="white"
+                  hoverColor="orange"
                   size="large"
                   variant="contained"
                   text="Aqui"
@@ -58,6 +61,7 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
+
         <div className="real-screen"></div>
       </main>
     </>
