@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import { PrimaryButton } from "../../common/PrimaryButton";
 import { Lettering } from "../../common/Lettering";
 

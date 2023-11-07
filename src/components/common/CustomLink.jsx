@@ -1,10 +1,10 @@
-import { NavHashLink } from "react-router-hash-link";
 import { Lettering } from "./Lettering";
+import { NavLink } from "react-router-dom";
 
 export const CustomLink = ({ to, text }) => {
   return (
-    <NavHashLink to={to}>
+    <NavLink to={to}>
       <Lettering text={text} fontSize={20} />
-    </NavHashLink>
+    </NavLink>
   );
 };

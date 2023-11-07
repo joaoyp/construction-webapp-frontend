@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { title } from "../functions/changeDocumentTitle";
 import { PrimaryButton } from "../components/common/PrimaryButton";
-import { CustomLink } from "../components/common/CustomLink";
 import { useNavigate } from "react-router-dom";
 
 export const Page404 = () => {
