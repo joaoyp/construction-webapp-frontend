@@ -9,9 +9,11 @@ export const PrimaryButton = ({
   hoverBgColor,
   hoverColor,
   fontFamily,
+  onClick,
 }) => {
   return (
     <Button
+      onClick={onClick}
       variant={variant}
       size={size}
       sx={{
@@ -19,6 +21,7 @@ export const PrimaryButton = ({
           backgroundColor: hoverBgColor,
           color: hoverColor,
         },
+        borderRadius: 5,
         color: color,
         bgcolor: bgcolor,
         fontFamily: fontFamily,

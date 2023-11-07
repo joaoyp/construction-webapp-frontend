@@ -24,3 +24,13 @@ code {
 .real-screen {
   height: calc(100vh - 6rem); /* 100vh - the header (h-24 = 6 rem) */
 }
+
+.min-real-screen {
+  min-height: calc(100vh - 6rem);
+}
+
+.active {
+  @apply text-yellow-500;
+  @apply underline;
+  @apply underline-offset-8;
+}

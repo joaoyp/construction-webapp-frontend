@@ -1,14 +1,17 @@
 import { useEffect } from "react";
+import { Banner } from "../components/common/Banner";
+import { title } from "../functions/changeDocumentTitle";
 
 export const Services = () => {
   useEffect(() => {
-    document.title = "PA - Construções | Serviços";
+    title("Serviços");
   }, []);
 
   return (
     <>
       <main>
-        <p>serviços</p>
+        <Banner text="Serviços" />
+        <div>serviços</div>
       </main>
     </>
   );
