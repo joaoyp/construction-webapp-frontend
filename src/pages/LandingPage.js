@@ -15,8 +15,6 @@ export const LandingPage = () => {
         <div id="demo-projects" className="real-screen">
           <p>t</p>
         </div>
-        <div id="about">about</div>
-        <div id="services">serviços</div>
       </main>
     </>
   );
