@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 export const Banner = ({ text }) => {
   return (
-    <div className="w-full h-96 bg-bannerAbout bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center">
+    <div className="w-full h-96 bg-bannerAbout bg-cover bg-no-repeat bg-middle bg-fixed flex justify-center items-center">
       <div>
         <Typography
           variant="h1"

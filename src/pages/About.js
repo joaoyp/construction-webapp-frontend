@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <main>
       <Banner text="Sobre Nós" />
-      <div>sobre</div>
+      <div className="real-screen">sobre</div>
     </main>
   );
 };

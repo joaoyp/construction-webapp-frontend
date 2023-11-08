@@ -1,13 +1,21 @@
 import React from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-const Layout = ({ children }) => (
-  <>
-    <Header />
-    <div className="flex-col min-real-screen">{children}</div>
-    <Footer />
-  </>
-);
+export const Layout = ({ children }) => {
+  const { pathname } = useLocation();
 
-export default Layout;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <>
+      <Header />
+      <div className="flex-col min-real-screen">{children}</div>
+      <Footer />
+    </>
+  );
+};

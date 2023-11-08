@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { LandingPage } from "../pages/LandingPage";
 import { Page404 } from "../pages/Page404";
 import { DebugPage } from "../pages/DebugPage";
-import Layout from "../components/structure/Layout/Layout";
+import { Layout } from "../components/structure/Layout/Layout";
 import { Contacts } from "../pages/Contacts";
 import { Gallery } from "../pages/Gallery";
 import { About } from "../pages/About";

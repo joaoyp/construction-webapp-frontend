@@ -1,7 +1,12 @@
+import { Intro } from "../Footer/Intro";
+import { Menu } from "../Footer/Menu";
+import { ContactUs } from "../Footer/ContactUs"
 export const Footer = () => {
   return (
-    <footer className="text-whit bg-neutral-800 text-white w-full h-60 mt-auto">
-      footer
+    <footer className="bg-neutral-800 text-white flex gap-2 justify-between pl-20 pr-20 pt-6 w-full h-72 mt-auto">
+      <Intro />
+      <Menu />
+      <ContactUs />
     </footer>
   );
 };
