@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/src/resources/images/8.jpg')",
+        bannerAbout: "url('/src/resources/images_pa/20230707_103612.jpg')",
         estimate: "url('/src/resources/images_pa/20230216_153818.jpg')",
-        hero2: "url('/src/resources/images_pa/20230707_103600.jpg')",
+        hero: "url('/src/resources/images_pa/20230707_103600.jpg')",
       },
       fontFamily: {
         alice: ['"Alice', "serif"],

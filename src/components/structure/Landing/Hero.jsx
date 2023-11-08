@@ -1,4 +1,4 @@
-import { Typography, Container, Icon } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import { PrimaryButton } from "../../common/PrimaryButton";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { Lettering } from "../../common/Lettering";
@@ -6,7 +6,7 @@ import { Lettering } from "../../common/Lettering";
 export const Hero = ({ scrollToDemoProjects }) => {
   return (
     <div id="hero" className="relative">
-      <div className="bg-hero2 bg-cover bg-fixed w-full real-screen"></div>
+      <div className="bg-hero bg-cover bg-fixed w-full real-screen"></div>
       <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-40 bg-black">
         <Container
           maxWidth="sm"
