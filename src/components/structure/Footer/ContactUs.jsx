@@ -6,7 +6,7 @@ import { Email } from "@mui/icons-material";
 
 export const ContactUs = () => {
   return (
-    <div className="w-1/3 flex flex-col">
+    <div className="w-1/3 flex flex-col pl-28">
         <div>
             <Typography
                 color="orange"
