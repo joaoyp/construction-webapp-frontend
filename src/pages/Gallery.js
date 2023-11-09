@@ -10,7 +10,7 @@ export const Gallery = () => {
   return (
     <main>
       <Banner text="Portefólio" />
-      <div>portefolio</div>
+      <div className="real-screen">portefolio</div>
     </main>
   );
 };

@@ -11,7 +11,7 @@ export const Services = () => {
     <>
       <main>
         <Banner text="Serviços" />
-        <div>serviços</div>
+        <div className="real-screen">serviços</div>
       </main>
     </>
   );

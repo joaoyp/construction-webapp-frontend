@@ -34,3 +34,16 @@ code {
   @apply underline;
   @apply underline-offset-8;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-yellow-500;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}

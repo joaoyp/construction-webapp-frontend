@@ -1,22 +1,27 @@
 import { CustomLink } from "../../common/CustomLink";
+import { useEffect, useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import { NavMenu } from "./NavMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { NavHamburgerMenu } from "./NavHamburgerMenu";
+import { toggleMenu } from "../../../redux/slices/menuSlice";
 
 export const Navbar = () => {
+  const isMenuOpen = useSelector((state) => state.menu.value);
+  const dispatch = useDispatch();
+
   return (
-    <nav className="flex items-center p-4 mr-40 w-auto">
-      <ul className="flex justify-center gap-8 h-20 items-center">
-        <li className="hover:text-yellow-500 hover:underline hover:underline-offset-8">
-          <CustomLink to="/sobre" text="Sobre Nós" />
-        </li>
-        <li className="hover:text-yellow-500 hover:underline hover:underline-offset-8">
-          <CustomLink to="/portefolio" text="Portefólio" />
-        </li>
-        <li className="peer/services hover:text-yellow-500 hover:underline hover:underline-offset-8">
-          <CustomLink to="/servicos" text="Serviços" />
-        </li>
-        <li className="peer/contacts hover:text-yellow-500 hover:underline hover:underline-offset-8">
-          <CustomLink to="/contactos" text="Contactos" />
-        </li>
-      </ul>
+    <nav className="flex justify-center items-center p-4 mr-40 max-xl:mr-0">
+      <div
+        onClick={() => {
+          dispatch(toggleMenu());
+        }}
+        className="xl:hidden cursor-pointer"
+      >
+        <MenuIcon fontSize="large" />
+      </div>
+      {isMenuOpen ? <NavHamburgerMenu /> : null}
+      <NavMenu />
     </nav>
   );
 };

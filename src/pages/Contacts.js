@@ -10,7 +10,7 @@ export const Contacts = () => {
   return (
     <main>
       <Banner text="Contactos" />
-      <div>contactos</div>
+      <div className="real-screen">contactos</div>
     </main>
   );
 };
