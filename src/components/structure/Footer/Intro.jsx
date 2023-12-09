@@ -2,8 +2,8 @@ import { Typography } from "@mui/material";
 
 export const Intro = () => {
   return (
-    <div className="bg-red-200 w-1/3 flex flex-col">
-      <div>
+    <div className="max-xl:items-center w-full flex flex-col">
+      <div className="text-center">
         <Typography
           color="orange"
           fontFamily="Alice"
@@ -20,9 +20,9 @@ export const Intro = () => {
           excelência.
         </Typography>
       </div>
-      <div className="flex items-end h-full mb-2">
+      <div className="flex items-end h-full mt-4 mb-4">
         <Typography>
-          © - Todos os direitos reservados a Pedro & Agostinho - Construções
+          © - Todos os direitos reservados a P&A - Construções
         </Typography>
       </div>
     </div>

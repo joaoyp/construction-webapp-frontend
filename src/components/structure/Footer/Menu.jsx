@@ -3,7 +3,7 @@ import { FooterLink } from "../../common/FooterLink";
 
 export const Menu = () => {
   return (
-    <div className="bg-green-200 w-1/3 flex flex-col gap-1 items-center">
+    <div className="w-full flex flex-col gap-1 items-center">
       <div>
         <Typography color="orange" fontFamily="Alice" fontSize={32}>
           Menu

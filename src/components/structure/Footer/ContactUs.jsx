@@ -6,7 +6,7 @@ import { Email } from "@mui/icons-material";
 
 export const ContactUs = () => {
   return (
-    <div className="bg-yellow-200 w-1/3 flex flex-col pl-28">
+    <div className="max-xl:items-center max-xl:pl-0 max-xl:mb-4 w-full flex flex-col pl-28">
       <div>
         <Typography color="orange" fontFamily="Alice" fontSize={32}>
           Contacte-nos
