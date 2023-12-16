@@ -1,3 +1,5 @@
+//DEPRECATED
+
 import { useEffect } from "react";
 import { Banner } from "../components/common/Banner";
 import { title } from "../functions/changeDocumentTitle";

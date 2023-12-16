@@ -1,3 +1,3 @@
 export const DemoProjects = () => {
-  return <div>demo projects</div>;
+  return <div className="min-h-[50vh]">Demo Projects</div>;
 };

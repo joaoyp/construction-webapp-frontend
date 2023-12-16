@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="flex-col min-real-screen">{children}</div>
+      <main className="flex-col min-real-screen">{children}</main>
       <Footer />
     </>
   );

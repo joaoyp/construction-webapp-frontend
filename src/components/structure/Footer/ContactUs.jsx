@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import { Lettering } from "../../common/Lettering";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Email } from "@mui/icons-material";
 
 export const ContactUs = () => {
   return (

@@ -5,7 +5,7 @@ import { Lettering } from "../../common/Lettering";
 
 export const Hero = ({ scrollTo }) => {
   return (
-    <div id="hero" className="relative">
+    <section id="hero" className="relative">
       <div className="bg-hero bg-cover bg-fixed w-full real-screen"></div>
       <div className="absolute inset-0 flex items-center text-white text-4xl font-bold justify-center bg-opacity-40 bg-black">
         <Container
@@ -45,7 +45,7 @@ export const Hero = ({ scrollTo }) => {
         </Container>
         <div className="absolute bottom-0 mb-12">
           <div
-            onClick={() => scrollTo({ toElement: "about-us" })}
+            onClick={() => scrollTo("about-us")}
             className="cursor-pointer hover:bg-neutral-200 rounded-full w-14 h-14 bg-white flex items-center justify-center"
           >
             <ArrowDownwardIcon sx={{ color: "orange" }} fontSize="large" />
@@ -55,6 +55,6 @@ export const Hero = ({ scrollTo }) => {
           <Lettering text="Saiba Mais" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import { Hero } from "../components/structure/Landing/Hero";
 import { scrollTo } from "../functions/scrollTo";
 import { title } from "../functions/changeDocumentTitle";
+import { Services } from "../components/structure/Landing/Services";
+import { DemoProjects } from "../components/structure/Landing/DemoProjects";
+import { About } from "../components/structure/Landing/About";
+import { Estimate } from "../components/structure/Landing/Estimate";
 
 export const LandingPage = () => {
   useEffect(() => {
@@ -10,18 +14,19 @@ export const LandingPage = () => {
 
   return (
     <>
-      <main>
-        <Hero scrollTo={scrollTo} />
-        <div id="about-us" className="real-screen">
-          <p>Sobre Nós</p>
-        </div>
-        <div id="services" className="real-screen">
-          <p>Serviços</p>
-        </div>
-        <div id="demo-projects" className="real-screen">
-          <p>Demo Projects</p>
-        </div>
-      </main>
+      <Hero scrollTo={scrollTo} />
+      <section id="about-us">
+        <About />
+      </section>
+      <section>
+        <Estimate />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="demo-projects">
+        <DemoProjects />
+      </section>
     </>
   );
 };
