@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 export const Intro = () => {
   return (
     <div className="max-xl:items-center w-full flex flex-col">
-      <div className="text-center">
+      <div>
         <Typography
           color="orange"
           fontFamily="Alice"

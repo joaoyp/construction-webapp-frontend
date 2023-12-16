@@ -1,5 +1,3 @@
-import { CustomLink } from "../../common/CustomLink";
-import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavMenu } from "./NavMenu";
 import { useDispatch, useSelector } from "react-redux";

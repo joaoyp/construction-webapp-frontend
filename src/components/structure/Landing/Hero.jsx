@@ -3,7 +3,7 @@ import { PrimaryButton } from "../../common/PrimaryButton";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { Lettering } from "../../common/Lettering";
 
-export const Hero = ({ scrollToDemoProjects }) => {
+export const Hero = ({ scrollTo }) => {
   return (
     <div id="hero" className="relative">
       <div className="bg-hero bg-cover bg-fixed w-full real-screen"></div>
@@ -45,7 +45,7 @@ export const Hero = ({ scrollToDemoProjects }) => {
         </Container>
         <div className="absolute bottom-0 mb-12">
           <div
-            onClick={scrollToDemoProjects}
+            onClick={() => scrollTo({ toElement: "about-us" })}
             className="cursor-pointer hover:bg-neutral-200 rounded-full w-14 h-14 bg-white flex items-center justify-center"
           >
             <ArrowDownwardIcon sx={{ color: "orange" }} fontSize="large" />

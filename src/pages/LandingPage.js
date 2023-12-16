@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Hero } from "../components/structure/Landing/Hero";
-import { scrollToDemoProjects } from "../functions/scrollToDemoProjects";
+import { scrollTo } from "../functions/scrollTo";
 import { title } from "../functions/changeDocumentTitle";
 
 export const LandingPage = () => {
@@ -11,9 +11,15 @@ export const LandingPage = () => {
   return (
     <>
       <main>
-        <Hero scrollToDemoProjects={scrollToDemoProjects} />
+        <Hero scrollTo={scrollTo} />
+        <div id="about-us" className="real-screen">
+          <p>Sobre Nós</p>
+        </div>
+        <div id="services" className="real-screen">
+          <p>Serviços</p>
+        </div>
         <div id="demo-projects" className="real-screen">
-          <p>t</p>
+          <p>Demo Projects</p>
         </div>
       </main>
     </>
