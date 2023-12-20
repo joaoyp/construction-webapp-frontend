@@ -29,21 +29,8 @@ export const Hero = ({ scrollTo }) => {
           >
             Construções e Remodelações
           </Typography>
-
-          <div className="mt-10">
-            <PrimaryButton
-              bgcolor="orange"
-              color="white"
-              hoverBgColor="white"
-              hoverColor="orange"
-              size="large"
-              variant="contained"
-              text="Peça um orçamento"
-              fontFamily="Alice"
-            />
-          </div>
         </Container>
-        <div className="absolute bottom-0 mb-12">
+        <div className="absolute bottom-0 mb-20">
           <div
             onClick={() => scrollTo("about-us")}
             className="cursor-pointer hover:bg-neutral-200 rounded-full w-14 h-14 bg-white flex items-center justify-center"
@@ -51,7 +38,7 @@ export const Hero = ({ scrollTo }) => {
             <ArrowDownwardIcon sx={{ color: "orange" }} fontSize="large" />
           </div>
         </div>
-        <div className="absolute bottom-0 mb-4">
+        <div className="absolute bottom-0 mb-12">
           <Lettering text="Saiba Mais" />
         </div>
       </div>
