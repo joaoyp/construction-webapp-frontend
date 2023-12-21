@@ -14,7 +14,7 @@ export const DemoProjects = () => {
           <Lettering fontSize={40} text={"Alguns dos nossos Projetos"}/>
       </div>
       <div className="w-full h-fit flex justify-center">
-          <div className="grid grid-cols-2 w-fit h-fit pt-12 pl-12 pr-8 text-center gap-6 max-md:grid-cols-1">
+          <div className="grid grid-cols-2 w-fit h-fit pt-12 pl-12 pr-12 text-center gap-6 max-md:grid-cols-1">
             <ProjectCard thumbnail={Project1} title={"Project 1"} location={"Lisboa - Areeiro"} />
             <ProjectCard thumbnail={Project2} title={"Project 2"} location={"Lisboa - Saldanha"} />
             <ProjectCard thumbnail={Project3} title={"Project 3"} location={"Margem Sul - Cabanas"} />
