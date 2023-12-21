@@ -1,9 +1,9 @@
 import { Lettering } from "./Lettering";
 import { Link } from "react-router-dom";
 
-export const FooterLink = ({ to, text, fontSize }) => {
+export const FooterLink = ({ to, text, fontSize, onClick }) => {
   return (
-    <Link to={to}>
+    <Link onClick={onClick} to={to}>
       <Lettering text={text} fontSize={fontSize ? fontSize : 20} />
     </Link>
   );
