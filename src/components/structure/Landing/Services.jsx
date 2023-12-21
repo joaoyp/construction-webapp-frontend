@@ -19,8 +19,8 @@ export const Services = () => {
             <div className="flex justify-center w-full mt-10">
                 <Lettering fontSize={40} text={"Os nossos Serviços"}/>
             </div>
-            <div className="w-full h-fit flex justify-center mt-8">
-                <div className="grid grid-cols-4 w-fit h-fit p-8 bg-gray-100 rounded-lg text-center gap-6 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1">
+            <div className="w-full h-fit flex justify-center mt-8 bg-gray-100 ">
+                <div className="grid grid-cols-4 w-fit h-fit p-8 rounded-lg text-center gap-6 max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1">
                     <ServiceCard thumbnail={Pintura} title={"Pintura"} desc={"Aprimore a estética do seu espaço com os nossos serviços profissionais de pintura."} />
                     <ServiceCard thumbnail={Ladrilho} title={"Ladrilho"} desc={"Eleve seus interiores com os nossos serviços de ladrilho realizados pela nossa experiente equipa."} />
                     <ServiceCard thumbnail={Caixilharia} title={"Caixilharia"} desc={"Instalação de janelas e portas, de forma a melhorar a segurança e a estética da sua propriedade."} />

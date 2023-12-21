@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 
-export const Lettering = ({ text, onClick, fontSize, variant, component, color }) => {
+export const Lettering = ({ text, onClick, fontSize, variant, component, color, fontWeight }) => {
   return (
     <Typography
       variant={variant}
@@ -9,6 +9,7 @@ export const Lettering = ({ text, onClick, fontSize, variant, component, color }
       fontSize={fontSize}
       color={color}
       onClick={onClick}
+      fontWeight={fontWeight}
     >
       {text}
     </Typography>
