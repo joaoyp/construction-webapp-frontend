@@ -11,11 +11,13 @@ export const PrimaryButton = ({
   hoverColor,
   fontFamily,
   onClick,
-  to
+  to,
+  type
 }) => {
   return (
     <Link to={to}>
       <Button
+        type={type}
         onClick={onClick}
         variant={variant}
         size={size}

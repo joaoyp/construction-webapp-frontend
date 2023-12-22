@@ -14,7 +14,9 @@ export const LandingPage = () => {
 
   return (
     <>
-      <Hero scrollTo={scrollTo} />
+      <section>
+        <Hero scrollTo={scrollTo} />
+      </section>
       <section id="about-us">
         <About />
       </section>
